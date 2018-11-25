@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+    <data/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvNumbers"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/grid_bg"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</layout>
+

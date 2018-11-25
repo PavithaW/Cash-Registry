@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="StatsLayoutBinding">
+
+        <variable
+            name="Stats"
+            type="com.cbasolutions.cbapos.viewmodel.StatisticsViewModel" />
+    </data>
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" />
+
+</layout>

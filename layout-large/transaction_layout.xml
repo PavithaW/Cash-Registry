@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="TransactionLayoutBinding">
+
+        <variable
+            name="Transaction"
+            type="com.cbasolutions.cbapos.viewmodel.TransactionViewModel" />
+    </data>
+
+
+    <!--<WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+    </WebView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f2f5fa">
+
+            <ListView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"/>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="12">
+
+                <LinearLayout
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/dateTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/timeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#686868"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.05"
+                    android:background="#e4e4e4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="3">
+
+                    <ListView
+                        android:id="@+id/list3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="3dp"
+                        android:divider="#ffffff"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.2">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/incompleteLay"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2.5"
+                        android:background="#f2f5fa"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:src="@drawable/warning" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="22dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Remaining"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/incompleteAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="30dp"
+                                android:text="300"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/chargeNowButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.20"
+                            android:background="@color/add_item_btn_color"
+                            android:text="Charge Now"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/cashpay"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="2.4">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:weightSum="2">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dip"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:weightSum="6">-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="1">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:id="@+id/imageView10"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_alignParentLeft="true"-->
+                                        <!--android:src="@drawable/cash_blue" />-->
+                                <!--</RelativeLayout>-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="5">-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView21"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_centerVertical="true"-->
+                                        <!--android:layout_marginLeft="10dp"-->
+                                        <!--android:text="Cash Payment"-->
+                                        <!--android:textColor="#232645"-->
+                                        <!--android:textSize="16sp" />-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/cashAmount"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_alignParentRight="true"-->
+                                        <!--android:layout_centerVertical="true"-->
+                                        <!--android:text="0.00"-->
+                                        <!--android:textColor="#068ed8"-->
+                                        <!--android:textSize="16sp" />-->
+                                <!--</RelativeLayout>-->
+                            <!--</LinearLayout>-->
+
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dip"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:weightSum="6">-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="1">-->
+
+                                <!--</RelativeLayout>-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="5">-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView23"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_marginLeft="10dp"-->
+                                        <!--android:textColor="#6b8292"-->
+                                        <!--android:textSize="12sp" />-->
+
+                                <!--</RelativeLayout>-->
+                            <!--</LinearLayout>-->
+
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1.6"-->
+                    <!--android:id="@+id/refund_layout">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:weightSum="2">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dip"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:weightSum="6">-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="1">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:id="@+id/imageView9"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_alignParentLeft="true"-->
+                                        <!--android:src="@drawable/refund" />-->
+                                <!--</RelativeLayout>-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="5">-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView18"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textColor="#232645"-->
+                                        <!--android:layout_centerVertical="true"-->
+                                        <!--android:textSize="18sp"-->
+                                        <!--android:layout_marginLeft="10dp"-->
+                                        <!--android:text="Refund" />-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/cardAmount"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textColor="#068ed8"-->
+                                        <!--android:layout_centerVertical="true"-->
+                                        <!--android:textSize="18sp"-->
+                                        <!--android:layout_alignParentRight="true"-->
+                                        <!--android:text="0.00" />-->
+                                <!--</RelativeLayout>-->
+                            <!--</LinearLayout>-->
+
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dip"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:weightSum="6">-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="1">-->
+
+                                <!--</RelativeLayout>-->
+
+                                <!--<RelativeLayout-->
+                                    <!--android:layout_width="0dip"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:layout_weight="5">-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/textView20"-->
+                                        <!--android:ellipsize="end"-->
+                                        <!--android:maxLines="1"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_marginLeft="10dp"-->
+                                        <!--android:textColor="#6b8292"-->
+                                        <!--android:textSize="13sp" />-->
+
+                                <!--</RelativeLayout>-->
+                            <!--</LinearLayout>-->
+
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.05"
+                    android:background="#e4e4e4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.8">
+
+                    <ListView
+                        android:id="@+id/list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="3dp"
+                        android:divider="#ffffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.05"
+                    android:background="#e4e4e4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:gravity="center"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/allItemsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#84b1d2"
+                        android:textSize="16sp"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:weightSum="6"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <Button
+                            android:id="@+id/refund_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/round_corner_button_2"
+                            android:text="@string/issueRefund"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.85"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

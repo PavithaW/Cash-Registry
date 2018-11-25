@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/grid_bg"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_gray_back" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/grid_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/addDisToItem"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:divider="@color/grid_bg"
+                android:dividerHeight="5dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:background="@color/grid_bg"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:weightSum="9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="9"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/prod_name"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_weight="4"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="5dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/qty"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/prod_name"-->
+                        <!--android:text="(x0)"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:textColor="@color/price_color"-->
+                        <!--android:textSize="14sp" />-->
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="60"
+                        android:textColor="@color/price_color"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/prod_name"
+                    android:text="(x0)"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/price_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/divider"
+                    android:orientation="horizontal">
+
+                </View>
+
+
+                <ListView
+                    android:id="@+id/variant_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/addItemQty"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/divider"
+                android:orientation="horizontal">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="-"
+                    android:textColor="@color/divider"
+                    android:textSize="34sp" />
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/minus"
+                    android:background="@color/divider"
+                    android:orientation="horizontal">
+
+                </View>
+
+                <EditText
+                    android:id="@+id/entered_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorPrimary"
+                    android:ems="5"
+                    android:maxLength = "10"
+                    android:gravity="center"
+                    android:hint="@string/quantity"
+                    android:inputType="number"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/entered_qty"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="1"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="20sp" />-->
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/plus"
+                    android:background="@color/divider"
+                    android:orientation="horizontal">
+
+                </View>
+
+
+                <TextView
+                    android:id="@+id/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:text="+"
+                    android:textColor="@color/divider"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/divider"
+                android:orientation="horizontal">
+
+            </View>
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_done" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

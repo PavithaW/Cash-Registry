@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/signLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="5.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backClose"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_gray_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="3"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_textview_green"
+                            android:padding="10dp"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/approved"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/totalPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs "
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:layout_weight="0.09" />
+
+                        <Button
+                            android:id="@+id/clear_sig_button"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="0.08"
+                            android:background="@color/divider"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/clearSignature"
+                            android:textAlignment="center"
+                            android:textAllCaps="false" />
+
+
+                    </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/doted_line_border"
+                    android:layout_weight="2.5">
+
+                        <com.cbasolutions.cbapos.helper.DrawingArea
+                            android:id="@+id/signaturePad"
+                            android:layout_width="match_parent"
+                            android:background="@color/white"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp" />
+
+                    <TextView
+                        android:id="@+id/txtSignHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/divider"
+                        android:textSize="60sp"
+                        android:visibility="visible"
+                        android:text="@string/signHere"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/signature_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:gravity="center"
+                android:text="xxxxxx"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btn_save_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_save_item"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
