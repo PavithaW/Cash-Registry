@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="ItemsFragmentBinding">
+
+        <variable
+            name="Item"
+            type="com.cbasolutions.cbapos.viewmodel.ItemsViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.cbasolutions.cbapos.util.NoDefaultSpinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:popupBackground="@color/white"
+                    android:background="@color/white"
+                    android:overlapAnchor="false">
+                </com.cbasolutions.cbapos.util.NoDefaultSpinner>
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/spinner1"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:overlapAnchor="false" />-->
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/drop_down_item" />
+
+                <ImageView
+                    android:id="@+id/spinner_arrow"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_bitmap" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bcButtonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:id="@+id/scanBCOnSale"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@color/add_item_btn_color"
+                    android:text="@string/scanBarcode"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <GridView
+            android:id="@+id/items_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search"
+            android:layout_margin="25dp"
+            android:columnWidth="170dp"
+            android:gravity="center"
+            android:horizontalSpacing="35dp"
+            android:numColumns="4"
+            android:verticalSpacing="35dp" />
+
+    </LinearLayout>
+
+</layout>
+

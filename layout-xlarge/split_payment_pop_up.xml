@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/grid_bg"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_gray_back" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/grid_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/remainingAmount"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="300dp"
+                android:layout_height="320dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:divider="@color/grid_bg"
+                android:dividerHeight="5dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:background="@color/grid_bg"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="9"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/splitAmount"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/splitPrice"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:ems="10"-->
+                    <!--android:imeOptions="flagNoExtractUi"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:hint="Rs 0.00"-->
+                    <!--android:cursorVisible="true"-->
+                    <!--android:gravity="center"/>-->
+
+
+                <EditText
+                    android:id="@+id/splitPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:hint="@string/split0"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="Cash Payment"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+
+                        <EditText
+                            android:id="@+id/tenderPrice"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/rounded_edittext"
+                            android:ems="10"
+                            android:hint="@string/tenderHint"
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:background="@color/white" />
+
+                        <Button
+                            android:id="@+id/cash_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/colorPrimary"
+                            android:focusable="true"
+                            android:drawableLeft="@drawable/cash_white"
+                            android:paddingLeft="90dp"
+                            android:drawablePadding="-80dp"
+                            android:gravity="center"
+                            android:text="@string/cash"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:text="@string/cardPayment"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/card_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/colorPrimary"
+                            android:focusable="true"
+                            android:drawableLeft="@drawable/card_white"
+                            android:paddingLeft="90dp"
+                            android:drawablePadding="-80dp"
+                            android:gravity="center"
+                            android:text="@string/card"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

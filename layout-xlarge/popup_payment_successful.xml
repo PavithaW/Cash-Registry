@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_back_rounded" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pop_success_ok"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/successPayment"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_textview"
+                    android:padding="8dp"
+                    android:text="Rs 90.00"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/out_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/changeOutOf"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="@string/likeReceipt"
+                android:textColor="@color/add_item_btn_color" />
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:paddingTop="20dp"-->
+            <!--android:paddingBottom="20dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/pop_success_at"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Email"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginRight="60dp"-->
+                <!--android:background="@color/divider"-->
+                <!--android:orientation="vertical"></LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/pop_success_msg"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Text"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginRight="60dp"-->
+                <!--android:background="@color/divider"-->
+                <!--android:orientation="vertical"></LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/no_receipt"-->
+                <!--android:visibility="visible"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/pop_success_norecepit"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="No Reciept"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="16sp" />-->
+
+
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:weightSum="3"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/pop_success_at"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/email"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/emailButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/divider"
+                android:orientation="vertical"></LinearLayout>
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/pop_success_msg"
+                        android:drawablePadding="5dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/txtMsg"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/textButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/divider"
+                android:orientation="vertical"></LinearLayout>
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/no_receipt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/noReceipt"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/noReceiptButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
