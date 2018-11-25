@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5.0"
+            android:background="@drawable/shape">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/grid_bg"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.5">
+
+                    <ImageView
+                        android:id="@+id/logo_image_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/warning" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="@string/incompletePayment"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.5"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.8">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="9.5">
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.8"></RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/content1"
+                            android:background="@color/white"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="7.9"
+                            android:orientation="vertical"
+                            android:weightSum="5">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4.8"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dip"
+                                    android:layout_weight="0.8">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="6">
+
+                                        <RelativeLayout
+                                            android:layout_width="0dip"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="6">
+
+
+                                            <TextView
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginTop="15dp"
+                                                android:textStyle="bold"
+                                                android:text="@string/amount"
+                                                android:textColor="@color/colorPrimary"
+                                                android:textSize="14sp" />
+
+
+                                            <TextView
+                                                android:id="@+id/totalAmount"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginRight="5dp"
+                                                android:textStyle="bold"
+                                                android:text="0.00"
+                                                android:textColor="@color/colorPrimary"
+                                                android:textSize="16dp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rl2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dip"
+                                    android:layout_weight="1.4">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="6">
+
+                                        <RelativeLayout
+                                            android:layout_width="0dip"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+
+                                            <ImageView
+                                                android:id="@+id/imageView10"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_marginTop="7dp"
+                                                android:src="@drawable/card_dark" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="0dip"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="5">
+
+
+                                            <TextView
+                                                android:id="@+id/paymentType"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginTop="15dp"
+                                                android:text="@string/cashPayment"
+                                                android:textColor="@color/colorPrimary"
+                                                android:textSize="14sp" />
+
+
+                                            <TextView
+                                                android:id="@+id/paymentId"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_marginBottom="15dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:text="jgjhdgfshdgfhgferfer"
+                                                android:textColor="@color/divider"
+                                                android:textSize="12dp" />
+
+                                            <TextView
+                                                android:id="@+id/cashAmount"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginRight="5dp"
+                                                android:text="0.00"
+                                                android:textColor="@color/colorPrimary"
+                                                android:textSize="14sp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dip"
+                                    android:layout_weight="0.8">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="6">
+
+                                        <RelativeLayout
+                                            android:layout_width="0dip"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="0dip"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="5">
+
+
+                                            <TextView
+                                                android:id="@+id/remaining"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_marginRight="5dp"
+                                                android:text="Rs 100.00 remaining"
+                                                android:textColor="#FE7D6A"
+                                                android:textSize="16dp"
+                                                android:textStyle="bold" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.8"></RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.7">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="9.5">
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.8"></RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="7.9">
+
+                            <Button
+                                android:id="@+id/completeButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@color/add_item_btn_color"
+                                android:gravity="center"
+                                android:text="@string/completeNow"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.8"></RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.3"></RelativeLayout>
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/space"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="0dip"-->
+                <!--android:layout_weight="0.5"></RelativeLayout>-->
+                <RelativeLayout
+                    android:id="@+id/space1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.9">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="9.5">
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"></RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/transactionNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="View (2) more incomplete transactions"
+                                    android:textColor="@color/add_item_btn_color"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/incompleteDescription"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"></RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="9.5">
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="@android:color/transparent"></RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3.5">
+
+                            <Button
+                                android:id="@+id/later_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/round_corner_button"
+                                android:text="@string/later"
+                                android:textColor="@android:color/white"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"></RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
