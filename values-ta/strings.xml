@@ -1,0 +1,336 @@
+<resources>
+    <string name="app_name">CBA-POS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">முகப்பு</string>
+    <string name="nav_products">தயாரிப்புகள் &amp; பொருட்களை</string>
+    <string name="nav_transactions">பரிவர்த்தனை பதிவு</string>
+    <string name="nav_stats">புள்ளி விவரம்</string>
+    <string name="nav_gross">மொத்த தொகை</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>முகப்பு</item>
+        <item>தயாரிப்புகள் &amp; பொருட்கள்</item>
+        <item>பரிவர்த்தனை பதிவு</item>
+        <item>புள்ளி விவரம்</item>
+        <item>மொத்த தொகை</item>
+    </string-array>
+
+    <string-array name="drop_down_array">
+        <item>பொருட்கள்</item>
+        <item>வகைகள்</item>
+        <item>தள்ளுபடிகள்</item>
+    </string-array>
+
+    <string name="activity_title_about_us">எங்களை பற்றி</string>
+    <string name="activity_title_privacy_policy">தனியுரிமை கொள்கை</string>
+    <string name="action_clear_all">எல்லா தரவையும் நீக்கவும்</string>
+    <string name="action_logout">வெளியேறவும்</string>
+    <string name="action_mark_all_read">வாசிக்கப்பட்ட    அனைத்தையும்  அடையாளமிடுக</string>
+    <string name="privacy_policy">Pதனியுரிமை கொள்கை</string>
+    <string name="forgot_password">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</string>
+    <string name="sign_up">பதிவு செய்யவும்</string>
+    <string name="request_reader">உங்கள் இலவச கார்டு ரீடர் இடம் கோரிக்கை</string>
+    <string name="bluetooth_reader">தயவுசெய்து உங்கள் கார்டு ரீடர்  இயக்கவும் ..</string>
+
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_add">+</string>
+    <string name="btn_backspace">C</string>
+
+    <!--SignInActivity-->
+    <string name="sign_in_forgot_password"><u>உங்கள் கடவுச்சொல்லை மறந்து விட்டீர்களா?</u></string>
+    <string name="sign_in_sign_up"><u>பதிவு செய்க</u></string>
+    <string name="email_address_hint">மின்னஞ்சல் முகவரி</string>
+    <string name="password_hint">கடவுச்சொல்</string>
+    <string name="sign_in_txt">உள்நுழைக</string>
+
+    <!--ForgetPasswordActivity-->
+    <string name="forget_password_email_hint">தயவுசெய்து மின்னஞ்சல் முகவரியை உள்ளிடவும்</string>
+    <string name="send_button_txt">அனுப்பு</string>
+    <string name="back_button_txt"><u>பின்னால் செல்கிறது </u></string>
+
+    <!--SignUpProcessOneActivity-->
+    <string name="sign_up_email_hint">மின்னஞ்சல் முகவரி</string>
+    <string name="sign_up_confirm_email_hint">மின்னஞ்சல் முகவரியை உறுதிசெய்யவும்</string>
+    <string name="sign_up_password_hint">கடவுச்சொல்</string>
+    <string name="next_button_text">அடுத்த</string>
+
+    <!--SignUpProcessTwoActivity-->
+    <string name="sign_up_business_name">வணிகத்தின் பெயர்</string>
+    <string name="sign_up_address_hint">வணிக முகவரி</string>
+    <string name="sign_up_mobile_no_hint">மொபைல் எண்</string>
+    <string name="sign_up_land_no_hint">தொலைபேசி எண்</string>
+    <string name="sign_up_button_text">அடுத்த</string>
+
+    <!--BillViewModel-->
+    <string name="sorry">மன்னிக்கவும்</string>
+    <string name="custom_amount_missing">விருப்பபிய அளவை தட்டச்சு செய்யவும்</string>
+
+    <!--ProductsItemsActivity-->
+    <string name="home"> முகப்பு </string>
+    <string name="product_items">தயாரிப்புகள் &amp; பொருட்கள்</string>
+    <string name="transaction_history">பரிவர்த்தனை பதிவு</string>
+    <string name="statistics">புள்ளி விவரம்</string>
+    <string name="settings">அமைப்புகள்</string>
+
+    <string name="edittext_hint"><font size="14">சதவீதம் அல்லது விலை</font></string>
+    <string name="view_all_text"><font color="#8ab2cc">அனைத்தையும் பார்க்கவும் </font><font color="#0091d1">(24) </font><font color="#8ab2cc"> Items</font></string>
+    <string name="signature_text">அட்டை வகை. எனது அட்டை வைத்திருப்பவர் உடன்படிக்கையின்படி மொத்தமாக செலுத்த ஒப்புக்கொள்கிறேன்.</string>
+
+    <!--Config file-->
+    <string name="pleaseWait">தயவு செய்து காத்திருங்கள் ...</string>
+    <string name="alert">எச்சரிக்கை!</string>
+    <string name="no_internet">இணையம் கிடைக்கவில்லை, உங்கள் இணைய இணைப்பை சரிபார்த்து மீண்டும் முயற்சிக்கவும்</string>
+    <string name="emailMissing">தயவுசெய்து மின்னஞ்சல் முகவரியை உள்ளிடவும்</string>
+    <string name="emailWrong">தயவுசெய்து மின்னஞ்சல் முகவரியை உள்ளிடவும்</string>
+    <string name="passwordMissing">தயவுசெய்து   கடவுச்சொல்லை உள்ளிடவும்</string>
+    <string name="loginSuccess">வெற்றிகரமாக உள்நுழைந்துள்ளீர்கள் ...</string>
+    <string name="loginFail">உள்நுழைய முடியாது. அங்கீகரிக்கப்படாத உள்நுழைவு  </string>
+    <string name="confirmEmail">தயவுசெய்து உங்கள் மின்னஞ்சலை உறுதிப்படுத்தவும்</string>
+    <string name="confirmEmailWrong">சரியான உறுதிப்படுத்தல் மின்னஞ்சலை உள்ளிடுக</string>
+    <string name="emailNotMatching">உள்ளிட்ட மின்னஞ்சல்கள் பொருந்தவில்லை. தயவுசெய்து அதே மின்னஞ்சலை உள்ளிடவும்</string>
+    <string name="addressMissing">தயவுசெய்து  வணிக முகவரியை உள்ளிடவும்</string>
+    <string name="mobileMissing">கைதொலைபேசி எண்ணை உள்ளிடவும்</string>
+    <string name="businessNameMissing">வணிக பெயரை உள்ளிடவும்</string>
+    <string name="forgotPassword">ஒரு மின்னஞ்சல் அனுப்பப்பட்டது. உள்நுழைவதற்கு முன், வழிமுறைகளைப் பின்பற்றி உங்கள் கடவுச்சொல்லை மீட்டெடுக்கவும்</string>
+    <string name="variantNameMissing">மாறுபட்ட பெயரை உள்ளிடுக</string>
+    <string name="variantPriceMissing">மாறுபடும் விலையை உள்ளிடவும்</string>
+    <string name="itemNameMissing">தயவு செய்து பொருள் பெயர் செருகவும்</string>
+    <string name="itemAddSuccess">வெற்றிகரமாக சேமிக்கப்பட்டது</string>
+    <string name="itemExists">பொருள் ஏற்கனவே உள்ளது. வேறு பெயரை உள்ளிடுக</string>
+    <string name="itemEdited">வெற்றிகரமாக புதுப்பிக்கப்பட்டது</string>
+    <string name="invalidTender">மொத்த தொகையை விட டெண்டர் அளவு குறைவாக இருக்க முடியாது</string>
+    <string name="tenderMissing">மொத்த தொகையை விட டெண்டர் அளவு குறைவாக இருக்க முடியாது</string>
+    <string name="invalidQty">பொருள் அளவு பூஜ்யமாக இருக்க முடியாது</string>
+    <string name="exceededPrice">அதிகபட்ச தொகை 1000000.00 க்கு குறைவாக இருக்க வேண்டும்</string>
+    <string name="exceededVariantPrice">அதிகபட்ச மாற்று அளவு 1000000.00 க்கும் குறைவாக இருக்க வேண்டும்</string>
+    <string name="enterItemPrice">தயவு செய்து பொருள் விலையை உள்ளிடுக </string>
+    <string name="catNameMissing">வகை பெயர் உள்ளிடவும் </string>
+    <string name="catColorMssing"> தயவு செய்து வகை நிறத்தை தேர்ந்தெடுக்கவும்</string>
+    <string name="catSaveSuccess">வகை வெற்றிகரமாக சேமிக்கப்பட்டது</string>
+    <string name="catExists">வகை ஏற்கனவே உள்ளது. வேறு பெயரைப் பயன்படுத்தவும்</string>
+    <string name="catEditSuccess">வகை வெற்றிகரமாக புதுப்பிக்கப்பட்டது</string>
+    <string name="disNameMissing">தள்ளுபடி பெயரை உள்ளிடவும்</string>
+    <string name="discountHigher">தள்ளுபடி 100% க்கும் அதிகமாக இருக்கக்கூடாது</string>
+    <string name="exceededDiscount">தள்ளுபடி மதிப்பு 1000000.00 க்கும் குறைவாக இருக்க வேண்டும்</string>
+    <string name="disMissing">தள்ளுபடி மதிப்பை உள்ளிடவும்</string>
+    <string name="disSaveSuccess">தள்ளுபடி வெற்றிகரமாக சேமிக்கப்பட்டது</string>
+    <string name="discountExist">தள்ளுபடி நீக்க தோல்வி தள்ளுபடி ஏற்கனவே உள்ளது. வேறு பெயரை உள்ளிடுக</string>
+    <string name="disEditedSuccess">" தள்ளுபடி வெற்றிகரமாக புதுப்பிக்கப்பட்டது</string>
+    <string name="pricepointSavedSuccess">விலை புள்ளி வெற்றிகரமாக சேமிக்கப்பட்டது</string>
+    <string name="pricepointUpdatedSuccess">விலைப் புள்ளி வெற்றிகரமாக புதுப்பிக்கப்பட்டது</string>
+    <string name="pricepointDeletedSuccess">விலை புள்ளி வெற்றிகரமாக நீக்கப்பட்டது</string>
+    <string name="duplicateSku">கணினி ஏற்கனவே அதே sku கொண்ட விலை புள்ளி உள்ளது. தயவு செய்து வேறு sku  ஐ உள்ளிடுக</string>
+    <string name="duplicateSku1">SKU ல் ஏற்கனவே பொருள் உள்ளது %1$s </string>
+    <string name="discountHigherTotal">தள்ளுபடி மொத்தம் விட அதிகமாக இருக்க முடியாது </string>
+    <string name="emptyCart">பரிமாற்றத்தில் ஏதேனும் உருப்படி (கள்) இல்லாமல் தள்ளுபடிகள் சேர்க்கப்படாது.</string>
+    <string name="discount">தள்ளுபடி</string>
+    <string name="item">" பொருட்கள் </string>
+    <string name="transactionNotSelected">தயவு செய்து தொடர ஒரு பரிவர்த்தனை தேர்ந்தெடுக்கவும்.</string>
+    <string name="refundReason1">தவறாகறான  கட்டணம்</string>
+    <string name="refundReason2">திரும்பப் பெறப்பட்ட பொருட்கள் </string>
+    <string name="refundReason3">உத்தரவு ரத்து செய்யப்பட்டது </string>
+    <string name="refundAmountMissing">தயவுசெய்து பணத்தை திருப்பி செலுத்துக</string>
+    <string name="invalidRefundAmount">தயவுசெய்து பணத்தை திருப்பி செலுத்துக</string>
+    <string name="refundAmountGreater">விற்பனை தொகை விட திரும்பப்பெறப்பட்ட தொகை அதிகமாக இருக்க முடியாது</string>
+    <string name="lessRefundAmount">திரும்பப்பெறும் அளவு பூஜ்ஜியத்தை விட அதிகமாக இருக்க வேண்டும்</string>
+    <string name="refundReason">தயவுசெய்து திரும்பப்பெறல் காரணத்தைத் தேர்வுசெய்யவும் அல்லது உள்ளிடவும்</string>
+    <string name="refundSuccess">வெற்றிகரமாக திரும்பப்பெறப்பட்டது</string>
+    <string name="refundFailed">ஏதோ தவறு நடந்துவிட்டது. தயவு செய்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="refundAgain">இந்த பரிவர்த்தனை ஒருமுறை நீங்கள் திரும்பப் பெற்றுள்ளீர்கள்.</string>
+    <string name="insforResetPassword">உங்கள் கடவுச்சொல்லை மீட்டமைப்பதற்கான வழிமுறைகளைப் பெற உங்கள் மின்னஞ்சல் முகவரியை உள்ளிடுக</string>
+    <string name="search">தேடல்</string>
+    <string name="addItem">பொருளைச் சேர்க்கவும்</string>
+    <string name="allItems">அனைத்து பொருட்கள்</string>
+    <string name="addNewItem">புதிய  பொருட்களை சேர்க்கவும்</string>
+    <string name="keepTrack">கண்காணிக்கவும்.</string>
+    <string name="enterDetail">உங்கள் விவரங்களை உள்ளிடவும் </string>
+    <string name="easyTransaction">எளிதாக பரிவர்த்தனை</string>
+    <string name="itemAssignToCat">வகைக்கு பொருட்களை ஒதுக்கவும் </string>
+    <string name="searchItems">தேடல் பொருட்கள்</string>
+    <string name="createCat">வகை உருவாக்கவும்</string>
+    <string name="catName">வகை பெயர்</string>
+    <string name="catColor">வகை வண்ணம் </string>
+    <string name="itemQuantity">அளவு</string>
+    <string name="createDis">தள்ளுபடி உருவாக்கவும்</string>
+    <string name="disName">தள்ளுபடி பெயர் </string>
+    <string name="saveDiscount">தள்ளுபடி சேமிக்கவும்</string>
+    <string name="leaveDiscount">விற்பனை நேரத்தில் தள்ளுபடி அளவை  வெற்று  விடவும் .</string>
+    <string name="disColor">தள்ளுபடி வண்ணம்</string>
+    <string name="itemColor">லேபிள் வண்ணம் </string>
+    <string name="createItem">பொருளை   உருவாக்கவும்</string>
+    <string name="itemName">பொருளி விலை பெயர் </string>
+    <string name="itemDes">விளக்கம்</string>
+    <string name="skuHint">SKU</string>
+    <string name="pricePoint">விலை புள்ளிகள் </string>
+    <string name="itmPrice">விலை</string>
+    <string name="addDisToItem">பொருளய் தள்ளுபடி செய்யுங்கள் </string>
+    <string name="addItemQty">பொருள் அளவு சேர்க்கவும் </string>
+    <string name="quantity">அளவு</string>
+    <string name="addVarDis">மாறும் தள்ளுபடி சேர்க்கவும் </string>
+    <string name="add">கூட்டு</string>
+    <string name="addVarPrice">மாறி விலை சேர்க்க </string>
+    <string name="enterPriceHint">Enter Price</string>
+    <string name="items">பொருட்கள்</string>
+    <string name="clear">தெளிவு</string>
+    <string name="cancel">ரத்து</string>
+    <string name="amount">Amount</string>
+    <string name="addCustom">+ தெரிவு செய்து  பொருள்களை சேர்க்கவும் </string>
+    <string name="tender">ஒப்பந்தம்</string>
+    <string name="undefineCat">வரையறுக்கப்பட்ட வகை </string>
+    <string name="saveCat">வகைக ளை  சேமிக்கவும்</string>
+    <string name="totalOf">மொத்தம்  </string>
+    <string name="likeReceipt">" நீங்கள் ஒரு ரசீது பெறவிரும்புகிறீர்களா?</string>
+    <string name="email">மின்னஞ்சல்</string>
+    <string name="txtMsg">உரை</string>
+    <string name="noReceipt">ரசீது இல்லை </string>
+    <string name="refundAmount">திரும்பப்பெறும் தொகை</string>
+    <string name="refundableAmount">மொத்த  திரும்பச்செலுத்தப்படும் தொகை  </string>
+    <string name="reasonForRefund">திரும்பப்பெற காரணம் </string>
+    <string name="accidentalCharge">தவறாகறான  கட்டணம்</string>
+    <string name="refundgoods">திரும்பப் பெறப்பட்ட பொருட்கள் </string>
+    <string name="cancelOrder">உத்தரவு ரத்து செய்யப்பட்டது </string>
+    <string name="other">வேறு</string>
+    <string name="refundTxt">பணம் திருப்பிக்கொடுத்தல்</string>
+    <string name="cash">பணம்</string>
+    <string name="remove">நீக்கு</string>
+    <string name="successPayment">கொடுப்பனவு வெற்றிகரமாக முடிக்கப்பட் டுள்ளது </string>
+    <string name="changeOutOf">ரூ. 500.00 விலையை மாற்றவும் </string>
+    <string name="userEmail">பயன்படுத்துபவர் மின்னஞ்சல் முகவரி</string>
+    <string name="send">அனுப்பு</string>
+    <string name="userPhone"> பயன்படுத்துபவர் தொலைபேசி எண்</string>
+    <string name="phone">தொலைபேசி எண்</string>
+    <string name="changepassword">கடவுச்சொல்லை மாற்றுக</string>
+    <string name="currentpassword">தற்போதைய கடவுச்சொல்</string>
+    <string name="newpassword">புதிய கடவுச்சொல்</string>
+    <string name="reEnterPassword">கடவு சொல்லை திருப்பி உள்ளிடு</string>
+    <string name="bankCode">வங்கி குறியீடு</string>
+    <string name="userName">பயன்படுத்துபவர்  பெயர்</string>
+    <string name="password">கடவுச்சொல்</string>
+    <string name="signin">உள்நுழைக</string>
+    <string name="imei">Imei</string>
+    <string name="simSerial">Sதயவுசெய்து வங்கி குறியீட்டை உள்ளிடவும்</string>
+    <string name="enterBankCode">தயவுசெய்து வங்கி குறியீட்டை உள்ளிடவும்</string>
+    <string name="enterTag">டேக் உள்ளிடவும்</string>
+    <string name="save">சேமிகவும்</string>
+    <string name="printer">அச்சு இயந்திரம்</string>
+    <string name="deviceName">சாதனத்தின் பெயர்</string>
+    <string name="selectLang">மொழியைத் தேர்ந்தெடுங்கள்</string>
+    <string name="viewDb">தரவுத்தளங்கள் பார்க்கவும்</string>
+    <string name="createPrinterstation">அச்சுப்பொறி நிலையம் உருவாக்கவும்</string>
+    <string name="printerName">அச்சுப்பொறி நிலையம் பெயர்</string>
+    <string name="receiptBillsRecords">ரசீது, பில்கள் &amp; அறிக்கைகள்</string>
+    <string name="automaticallyPrint">தானியங்கு அச்சு ரசீது</string>
+    <string name="setDeviceName">சாதனத்தின் பெயரை அமைக்கவும்</string>
+    <string name="languageSelect">உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="signOut">வெளியேறு</string>
+    <string name="approved">அங்கீகரிக்கப்பட்ட</string>
+    <string name="clearSignature">தெளிவான கையொப்பம்</string>
+    <string name="signHere">இங்கே கையப்பம் இடவும்</string>
+    <string name="splitPayment">பிளவு கட்டணம்</string>
+    <string name="cardBut">\nCard</string>
+    <string name="cashBut">\nCash</string>
+    <string name="remainingAmount">மீதமுள்ள தொகை</string>
+    <string name="splitAmount">பிரித்தத அளவு</string>
+    <string name="split0">பிரித்தத தொகை ரூ. 0.00</string>
+    <string name="cashPayment">பணம் செலுத்துதல்</string>
+    <string name="cardPayment">அட்டை பணம் செலுத்துதல்</string>
+    <string name="tenderHint">Tender Amount Rs 0.00</string>
+    <string name="card">Card</string>
+    <string name="waitingForSwap">காத்திருக்கிறேன் swipe / Insert card / Debit card</string>
+    <string name="issueRefund">பிரச்சினை திரும்பப்  திரும்பப் பட்டிக்குறது</string>
+    <string name="addnewPricepoint">புதிய விலை புள்ளியைச் </string>
+    <string name="variantName">மாறுபாட்டின் பெயர்</string>
+    <string name="leavePrice">விற்பனையின் நேரத்தில் நுழைய காலியாக உள்ள விலையை விடுங்கள்</string>
+    <string name="sureDeleteCat">நீங்கள் பகுதியை நீக்க விரும்புகிறீர்களா?</string>
+    <string name="catDeleteSuccess">வகை வெற்றிகரமாக நீக்கப்பட்டது</string>
+    <string name="sureDeleteItem">இந்த பொருட்களை  நிச்சயமாக நீக்க விரும்புகிறீர்களா?</string>
+    <string name="sureDeleteItemImage">பொருளின் படத்தை நிச்சயமாக நீக்க வேண்டுமா?</string>
+    <string name="sureDeleteVariant">நிச்சயமாக இந்த மாதிரியை நீக்க வேண்டுமா?</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="noImageToDelete">நீக்க எந்த படமும் இல்லை</string>
+    <string name="sureDeleteDis">தயவுசெய்து வேறொரு பெயரை உள்ளிடுக நீங்கள் தள்ளுபடி நீக்க விரும்புகிறீர்களா?</string>
+    <string name="wishToCont">இந்த வகை பொருட்கள் ஒதுக்கப்பட்டுள்ளதா என்பதை கவனத்தில் கொள்ளவும். வகையை நீக்குவது பொருட்களை பிரித்தெடுக்கப்படுவதாகும்.நீ தொடர விரும்புகிறீர்களா?</string>
+    <string name="editItem">பொருட்களை் திருத்தவும்</string>
+    <string name="saveItem">பொருளை சேமிக்கவும</string>
+    <string name="itemDeletedSuccess">பொருள் வெற்றிகரமாக நீக்கப்பட்டது</string>
+    <string name="addDeletePhoto">படத்தை சேர் / நீக்கு</string>
+    <string name="editPricePoint">விலைப் புள்ளியைத் திருத்துக</string>
+    <string name="editCat">வகை திருத்தம் </string>
+    <string name="editDis">தள்ளுபடித் திருத்தம்</string>
+    <string name="enterDiscount">தள்ளுபடி மதிப்பை உள்ளிடவும்</string>
+    <string name="takePhoto">புகைப்படம் எடுக்கவும்</string>
+    <string name="choosePhoto">புகைப்படத்தைத் தேர்வுசெய்யவும்</string>
+    <string name="deletePhoto">புகைப்படத்தை நீக்கு</string>
+    <string name="noMatchesFoundReceipt">நீங்கள் தேடும் ரசீதுக்கான பொருத்தங்கள் இல்லை</string>
+    <string name="closeBill">விலை பட்டியல்  மூடபட்டுள்ள்து</string>
+    <string name="cont">தொடர்</string>
+    <string name="splitAmountEmpty">பிரித்த  தொகை காலியாக இருக்க முடியாது</string>
+    <string name="tenderEmpty">ஒப்பந்த தொகை காலியாக இருக்க முடியாது</string>
+    <string name="lessTender">ஒப்பந்த தொகை , பிரித்த  தொகை  விட குறைவாக இருக்க முடியாது</string>
+    <string name="higherSplit">பிரித்த  தொகை மொத்த தொகையை விட குறைவாக இருக்க வேண்டும்</string>
+    <string name="exceededSplit">பிரித்தத தொகை மீதமிருக்க முடியாது</string>
+    <string name="remain"> மீதமிருக்ககின்றது</string>
+    <string name="done">முடிந்ததாகக்</string>
+    <string name="noMatchesFoundCat">நீங்கள் தேடும் பிரிவிற்கான போட்டி இல்லை</string>
+    <string name="noMatchesFoundDis">நீங்கள் தேடும் தள்ளுபடிக்கான போட்டிகளும் இல்லை</string>
+    <string name="noMatchesFoundItem">நீங்கள் தேடும் உருப்படிக்கு பொருத்தங்கள் இல்லை</string>
+    <string name="tenderButton">ஒப்பந்தம்</string>
+    <string name="category">வகை</string>
+    <string name="signUp">பதிவு செய்க</string>
+    <string name="addVariant">விலை புள்ளிகள் சேமிக்கவும</string>
+    <string name="viewAll">எல்லா உருப்படிகளையும் </string>
+    <string name="viewAll1">காணலாம் </string>
+    <string name="refund">Refund </string>
+    <string name="businessname">Business Name</string>
+    <string name="businessAddress">Business Address 1</string>
+    <string name="businessAddress1">Business Address 2</string>
+    <string name="businessAddressCity">City</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="inValidLogin">Please enter correct login details </string>
+    <string name="alreadyExistUser">User already Exists </string>
+    <string name="sentSmsSuccess">Message sent successfully</string>
+    <string name="signUpSuccess">Successfully signed up, please log in now</string>
+    <string name="invalidPasswordLength">Password must contain at least 8 characters</string>
+    <string name="passwordValidation">Password must contain both letters and numbers</string>
+    <string name="specialCharacter">Password should not conatain special characters</string>
+    <string name="invalidMobileNumber">Mobile number should contain 10 digits</string>
+    <string name="variable">variable </string>
+
+    <string name="storeDataEmpty">Store Data is Empty. Please Login again</string>
+    <string name="serverError">Error in server</string>
+    <string name="cityMissing">Please select the city</string>
+    <string name="splitZero">Split Amount Cannot be 0.00</string>
+    <string name="tenderZero">Tender Amount Cannot be 0.00</string>
+    <string name="invalidPrice">Invalid price</string>
+    <string name="existingDiscount">වට්ටම දැනටමත් පද්ධතිය තුළ පවතී, ඔබට මෙය ප්‍රතිස්ථාපනය කිරිමට අවශයද?</string>
+    <string name="scanBarcode">Scan Barcode</string>
+    <string name="incompletePayment">Incomplete Payment</string>
+    <string name="completeNow">Complete Now</string>
+    <string name="later">Later</string>
+    <string name="offlineBanner">You are offline! Please connect to the internet</string>
+    <string name="onlineBanner">       You are online      </string>
+    <string name="incompleteDescription">You can also complete the transaction in transaction history</string>
+    <string name="incompleteTransactionCount">View (%1$d) more incomplete transactions</string>
+    <string name="barcodeWarning">Barcode cannot be exist in variable item</string>
+    <string name="lowStock">These items need to be re-stock!</string>
+    <string name="okBtn">OK</string>
+    <string name="zeroStock">Stock is empty. Re-stock the item before the sale.</string>
+
+</resources>

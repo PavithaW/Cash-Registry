@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">CBA-POS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">නිවහන</string>
+    <string name="nav_products">නිෂ්පාදන සහ භාණ්ඩ</string>
+    <string name="nav_transactions">ගනුදෙනු ඉතිහාසය</string>
+    <string name="nav_stats">සංඛ්‍යාලේඛන</string>
+    <string name="nav_gross">දළ වටිනාකම</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>නිවහන</item>
+        <item>අයිතම</item>
+        <item>ගනුදෙනු ඉතිහාසය</item>
+        <item>සංඛ්යාලේඛන</item>
+        <item>දළ වටිනාකම</item>
+    </string-array>
+
+    <string-array name="drop_down_array">
+        <item>අයිතම</item>
+        <item>ප්‍රභේද</item>
+        <item>වට්ටම්</item>
+    </string-array>
+
+    <string name="activity_title_about_us">අපි ගැන</string>
+    <string name="activity_title_privacy_policy">රහස්යතා ප්රතිපත්තිය</string>
+    <string name="action_clear_all">සියල්ල ඉවත් කරන්න</string>
+    <string name="action_logout">ඉවත්ව යාම</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">රහස්යතා ප්රතිපත්තිය</string>
+    <string name="forgot_password">මුරපදය අමතක ද?</string>
+    <string name="sign_up">ලියාපදිංචි වන්න</string>
+    <string name="request_reader">ඔබේ නොමිලේ කාඩ් කියවනය අයදුම් කරන්න</string>
+
+    <string name="bluetooth_reader">කරුණාකර ඔබේ කාඩ්පත් කියවනය ක්‍රියාත්මක කරන්න</string>
+
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_add">+</string>
+    <string name="btn_backspace">C</string>
+
+    <!--SignInActivity-->
+    <string name="sign_in_forgot_password"><u>මුරපදය අමතක ද?</u></string>
+    <string name="sign_in_sign_up"><u>ලියාපදිංචි වන්න</u></string>
+    <string name="email_address_hint">ඊ-මේල් ලිපිනය</string>
+    <string name="password_hint">මුරපදය</string>
+    <string name="sign_in_txt">පිවිසෙන්න</string>
+
+    <!--ForgetPasswordActivity-->
+    <string name="forget_password_email_hint">ඊ-මේල් ලිපිනය ඇතුලත් කරන්න</string>
+    <string name="send_button_txt">යවන්න</string>
+    <string name="back_button_txt"><u>ආපසු</u></string>
+
+    <!--SignUpProcessOneActivity-->
+    <string name="sign_up_email_hint">ඊ-මේල් ලිපිනය</string>
+    <string name="sign_up_confirm_email_hint">ඊ-මේල්  ලිපිනය තහවුරු කරන්න</string>
+    <string name="sign_up_password_hint">මුරපදය</string>
+    <string name="next_button_text">ඊලඟ</string>
+
+    <!--SignUpProcessTwoActivity-->
+    <string name="sign_up_business_name">ව්‍යාපාරික නාමය</string>
+    <string name="sign_up_address_hint">ව්‍යාපාරික ලිපිනය 1</string>
+    <string name="sign_up_mobile_no_hint">ජංගම දූරකථන අංකය</string>
+    <string name="sign_up_land_no_hint">ස්ථාවර දුරකථන මාර්ගය</string>
+    <string name="sign_up_button_text">ඊලඟ</string>
+
+    <!--BillViewModel-->
+    <string name="sorry">සමාවන්න</string>
+    <string name="custom_amount_missing">කරුණාකර අභිරුචි ප්‍රමාණය ටයිප් කරන්න</string>
+
+    <!--ProductsItemsActivity-->
+    <string name="home">මුල් පිටුව</string>
+    <string name="product_items">අයිතම</string>
+    <string name="transaction_history">ගනුදෙනු ඉතිහාසය</string>
+    <string name="statistics">සංඛ්‍යාලේඛන</string>
+    <string name="settings">සැකසුම්</string>
+
+    <string name="edittext_hint"><font size="14">ප්‍රතිශත හෝ මිල</font></string>
+    <string name="view_all_text"><font color="#8ab2cc">සියල්ල නරඹන්න</font><font color="#0091d1">(24) </font><font color="#8ab2cc"> Items</font></string>
+    <string name="signature_text">කාඩ් වර්ගය. මගේ කාඩ්පත් හිමියාගේ එකඟතාවයට අනුව මුළු මුදල ගෙවීමට එකඟ විය</string>
+
+
+    <!--Config file-->
+    <string name="pleaseWait">කරුණාකර රැඳී සිටින්න...</string>
+    <string name="alert">පණිවුඩය!</string>
+    <string name="no_internet">කරුණාකර ඔබගේ අන්තර්ජාල සබඳතාව පරික්ෂා කර නැවත උත්සාහ කරන්න</string>
+    <string name="emailMissing">කරුණාකර ඔබගේ ඊ-මේල් ලිපිනය ඇතුලත් කරන්න</string>
+    <string name="emailWrong">කරුණාකර වලංගු ඊ-මේල් ලිපිනයක් ඇතුලත් කරන්න</string>
+    <string name="passwordMissing">කරුණාකර මුරපදය ඇතුලත් කරන්න</string>
+    <string name="loginSuccess"> පිවිසි ඇත</string>
+    <string name="loginFail">පිවිසීම අසාර්ථකයි. අනවසර පිවිසිමකි</string>
+    <string name="confirmEmail">කරුණාකර ඔබගේ ඊ-මේල් ලිපිනය  තහවුරු කරන්න</string>
+    <string name="confirmEmailWrong">කරුණාකර වලංගු තහවුරු කිරීමේ  ඊ-මේල් ලිපිනයක් ඇතුලත් කරන්න</string>
+    <string name="emailNotMatching">ඇතුල් කළ ඊ-මේල් ගැලපෙන්නේ නැත. කරුණාකර වලංගු   ඊ-මේල් ලිපිනයක්  ඇතුලත් කරන්න</string>
+
+    <string name="addressMissing">කරුණාකර ව්‍යාපාරික ලිපිනය ඇතුලත් කරන්න</string>
+    <string name="mobileMissing">කරුණාකර ජංගම දුරකථන අංකය ඇතුළත් කරන්න</string>
+    <string name="businessNameMissing">කරුණාකර ව්‍යාපාර නාමය ඇතුලත් කරන්න</string>
+
+
+    <string name="forgotPassword">විද්යුත් තැපැල් පණිවුඩයක් එවන එදි. කරුණාකර  එහි උපදෙස් අනුගමනය කර අතුල් වීමට පෙර ඔබගේ මුරපදය යලි පිහිටුවා ගන්න</string>
+    <string name="variantNameMissing">කරුණාකර ප්‍රභේද නාමය ඇතුලත් කරන්න</string>
+    <string name="variantPriceMissing">කරුණාකර මිල විචල්‍යය ඇතුලත් කරන්න</string>
+
+    <string name="itemNameMissing">කරුණාකර අයිතම නම ඇතුලත් කරන්න</string>
+    <string name="itemAddSuccess">අයිතමය  නිර්මාණය කරන ලදි</string>
+    <string name="itemExists">අයිතමය දැනටමත් පද්ධතිය තුළ පවතී. කරුණාකර වෙනත් නමක් භාවිතා කරන්න</string>
+    <string name="itemEdited">අයිතමය යාවත්කාලින කරන ලදි</string>
+     <string name="invalidTender">ලබා දුන්  මුදල, මුළු එකතුවට වඩා අඩු විය නොහැක</string>
+    <string name="tenderMissing">ලබා දුන් මුදල මුළු එකතුවට වඩා අඩු විය නොහැක</string>
+    <string name="invalidQty">අයිතම ප්‍රමාණය ශුන්‍ය විය නොහැක</string>
+    <string name="exceededPrice">උපරිම මිල 1000000.00 වඩා වැඩි නොවිය යුතුය </string>
+    <string name="exceededVariantPrice">උපරිම ප්‍රභේද ප්‍රමාණය 1000000.00 ට අඩු විය යුතුය</string>
+    <string name="enterItemPrice">කරුණාකර අයිතම මිල ඇතුලත් කරන්න</string>
+    <string name="catNameMissing">කරුණාකර ප්‍රභේද නම  ඇතුලත් කරන්න</string>
+    <string name="catColorMssing">කරුණාකර  ප්‍රභේද වර්ණය තෝරන්න</string>
+    <string name="catSaveSuccess">ප්‍රභේදය  නිර්මාණය කරන ලදි</string>
+    <string name="catExists">ප්‍රභේදය  දැනටමත් පද්ධතිය තුළ පවතී. කරුණාකර වෙනත් නමක් භාවිතා කරන්න</string>
+    <string name="catEditSuccess">ප්‍රභේදය  යාවත්කාලීන කරන ලදි</string>
+    <string name="disNameMissing">කරුණාකර වට්ටම් නම ඇතුළත් කරන්න</string>
+    <string name="discountHigher">වට්ටම් 100% ට වඩා වැඩි විය නොහැක.</string>
+    <string name="exceededDiscount">වට්ටම් වටිනාකම 1000000.00 ට අඩු විය යුතුය</string>
+    <string name="disMissing">කරුණාකර වට්ටම් වටිනාකම ඇතුලත් කරන්න</string>
+    <string name="disSaveSuccess">වට්ටම  නිර්මාණය කරන ලදි  </string>
+    <string name="discountExist">වට්ටම දැනටමත් පද්ධතිය තුළ පවතී. කරුණාකර වෙනත් නමක් භාවිතා කරන්න   </string>
+
+     <string name="disEditedSuccess">වට්ටම  යාවත්කාලීන කරන ලදි </string>
+    <string name="pricepointSavedSuccess">මිල විචල්‍යය  නිර්මාණය කරන ලදි  </string>
+    <string name="pricepointUpdatedSuccess">මිල විචල්‍යය  යාවත්කාලීන කරන ලදි  </string>
+    <string name="pricepointDeletedSuccess">මිල විචල්‍යය  ඉවත් කරන ලදි</string>
+    <string name="duplicateSku">මෙම SKU ඵ්කකය සහිත මිල විචල්‍යයක් , දැනටමත් පද්ධතිය තුළ පවතී. කරුණාකර වෙනස්  SKU ඵ්කකයක් ඇතුලත් කරන්න</string>
+   <string name="duplicateSku1">SKU ඒකකය, දැනටමත් %1$s , අයිතමය   තුළ පවතී</string>
+    <string name="discountHigherTotal">වට්ටම් මුළු එකතුවට වඩා වැඩි විය නොහැක</string>
+    <string name="emptyCart">ගනුදෙනුව සඳහා අයිතම තොරගන්නා තුරු වට්ටමක් ඇතුලත් කළ නොහැක</string>
+    <string name="discount">වට්ටම්</string>
+    <string name="item">අයිතමය</string>
+    <string name="transactionNotSelected">කරුණාකර ඉදිරියට කරගෙන යාමට ගනුදෙනුවක් තෝරාගන්න</string>
+    <string name="refundReason1">අහඹු අයවිම්</string>
+    <string name="refundReason2">ආපසු ලබා දුන් භාණ්ඩ</string>
+    <string name="refundReason3">අවලංගු කල ගනුදෙනු </string>
+    <string name="refundAmountMissing">කරුණාකර ආපසු ලබා දිය යුතු මුදල ඇතුලත් කරන්න</string>
+    <string name="invalidRefundAmount">කරුණාකර වලංගු ආපසු ගෙවීමේ මුදලක් ඇතුලත් කරන්න</string>
+    <string name="refundAmountGreater"> ආපසු ලබා දිය යුතු මුදල ,ගනුදෙනුව සඳහා වූ මුලු මුදලට වඩා වැඩි විය නොහැක</string>
+    <string name="lessRefundAmount">නැවත ලබා දිය යුතු මුදලෙහි අගය,  ශුන්‍යට වඩා වැඩි විය යුතුය</string>
+    <string name="refundReason">කරුණාකර ආපසු මුදල් ලබා ගැනිමේ හේතුව තෝරන්න/ඇතුලත් කරන්න</string>
+    <string name="refundSuccess">ආපසු මුදල් ලබා දිම සාර්ථකයි</string>
+    <string name="refundFailed">කුමක්  හෝ වැරදීමක් සිදුවී ඇත.  කරුණාකර නැවත වරක් උත්සාහ කරන්න.</string>
+    <string name="refundAgain">ඔබ මෙම ගනුදෙනුවෙන් වරක් මුදල් ලබා දි ඇත</string>
+    <string name="insforResetPassword">ඔබේ මුරපදය යළි පිහිටුවීමට උපදෙස් ලබා ගැනීම සඳහා ,ඔබේ ඊ-මේල් ලිපිනය ඇතුලත් කරන්න </string>
+    <string name="search">සොයන්න </string>
+    <string name="addItem">නව අයිතම</string>
+    <string name="allItems">සියලු අයිතම </string>
+
+    <string name="addNewItem">Add New Item</string>
+    <string name="keepTrack">දිගටම ගමන් කරන්න</string>
+    <string name="enterDetail">ඔබගේ විස්තර ඇතුලත් කරන්න </string>
+    <string name="easyTransaction">පහසු ගනුදෙනු</string>
+    <string name="itemAssignToCat">ප්‍රභේද සඳහා අයිතම තේරිම </string>
+    <string name="searchItems">අයිතම සෙවීම </string>
+    <string name="createCat">ප්‍රභේද සෑදීම</string>
+    <string name="catName">ප්‍රභේදයේ නම </string>
+    <string name="catColor">ප්‍රභේදයේ වර්ණය </string>
+
+    <string name="createDis">වට්ටම් සෑදීම</string>
+    <string name="disName">වට්ටම් නම </string>
+    <string name="saveDiscount">වට්ටම සුරකින්න  </string>
+    <string name="leaveDiscount">අලෙවිය සිදුවන අවස්තවේදි මිල ඇතුලත් කිරිම සඳහා, දැනට මිල ක්ෂේත්‍රය හිස්ව තබන්න </string>
+    <string name="disColor">වට්ටම් වර්ණ</string>
+    <string name="itemColor">අයිතම වර්ණ</string>
+    <string name="createItem">අයිතම සෑදීම</string>
+    <string name="itemName">අයිතම නම </string>
+    <string name="itemDes">විස්තරය</string>
+    <string name="skuHint">SKU</string>
+    <string name="pricePoint">මිල විචල්‍යය </string>
+    <string name="itmPrice">මිල</string>
+    <string name="itemQuantity">ප්‍රමාණය</string>
+    <string name="addDisToItem">අයිතමය සඳහා වට්ටමක් තෝරන්න</string>
+    <string name="addItemQty">අයිතම ප්‍රමාණය එකතු කරන්න </string>
+    <string name="quantity"> ප්‍රමාණය</string>
+    <string name="addVarDis">වට්ටම් විචල්‍යය ඇතුලත් කරන්න</string>
+    <string name="add">එකතුව</string>
+    <string name="addVarPrice">විචල්‍යය මිල ඇතුලත් කරන්න  </string>
+    <string name="enterPriceHint">මිල ඇතුලත් කරන්න  </string>
+    <string name="items">අයිතම</string>
+    <string name="clear">මකන්න</string>
+    <string name="cancel">ආපසු</string>
+    <string name="amount">මුළු මුදල </string>
+    <string name="addCustom">+  උපයෝගී අයිතම ඇතුලත් කරන්න </string>
+    <string name="tender">ලබා දුන් මුදල</string>
+    <string name="undefineCat">ප්‍රභේදය අඩංගු නොවන අයිතමයක් </string>
+    <string name="saveCat">ප්‍රභේදය සුරකින්න </string>
+    <string name="saveItem">අයිතමය සුරකින්න</string>
+    <string name="totalOf">එකතුව </string>
+    <string name="likeReceipt">ලදුපතක් සඳහා පහත විකල්ප තෝරන්න </string>
+    <string name="email">ඊ-මේල් </string>
+    <string name="txtMsg">කෙටි පණිවුඩ </string>
+    <string name="noReceipt">රිසිට්පතක් නැත</string>
+    <string name="refundAmount">නැවත ලබා දිය යුතු මුදල </string>
+    <string name="refundableAmount">නැවත ලබා දිය හැකි මුලු මුදල </string>
+    <string name="reasonForRefund">නැවත මුදල් ලබා ගැනීමට හේතුව </string>
+    <string name="accidentalCharge">අහඹු අයවිම්</string>
+    <string name="refundgoods">ආපසු ලබා දුන් භාණ්ඩ </string>
+    <string name="cancelOrder">අවලංගු කල ගනුදෙනු </string>
+    <string name="other">වෙනත්</string>
+    <string name="refundTxt">ආපසු ගෙවන්න</string>
+    <string name="cash">මුදල්</string>
+    <string name="remove">ඉවත් කරන්න</string>
+    <string name="successPayment">ගෙවිම සාර්ථකයි </string>
+    <string name="changeOutOf">ඉතුරු මුදල ගෙවු මුදලෙන්,  </string>
+    <string name="userEmail">පරිශිලකයාගේ ඊ-මේල්  ලිපිනය</string>
+    <string name="send">යවන්න</string>
+    <string name="userPhone">පරිශිලකයාගේ දුරකථන අංකය</string>
+    <string name="phone">දුරකථන අංකය</string>
+    <string name="changepassword">මුරපදය වෙනස් කිරිම</string>
+    <string name="currentpassword">දැනට පවතින මුරපදය</string>
+    <string name="newpassword">නව මුරපදය</string>
+    <string name="reEnterPassword">මුරපදය නැවත ඇතුලත් කරන්න</string>
+    <string name="bankCode">බැංකු කේතය</string>
+    <string name="userName">පරිශිලකයාගේ නම</string>
+    <string name="password">මුරපදය</string>
+    <string name="signin">පිවිසෙන්න</string>
+    <string name="imei">ඉමි අංකය</string>
+    <string name="simSerial">සිම් සීරියල් අංකය</string>
+    <string name="enterBankCode">කරුණාකර බැංකු කේතය ඇතුලත් කරන්න</string>
+    <string name="enterTag">ටැග්  එකඇතුලත් කරන්න</string>
+    <string name="save">සුරකින්න </string>
+    <string name="printer">මුද්‍රණ යන්ත්‍ර</string>
+    <string name="deviceName">උපාංගයේ නම</string>
+    <string name="selectLang">භාෂාව තෝරන්න</string>
+    <string name="viewDb">View DB</string>
+    <string name="createPrinterstation">මුද්‍රණ මධය්‍යස්ථානය</string>
+
+    <string name="printerName">මුද්‍රණ මධය්‍යස්ථානයේ නම</string>
+    <string name="receiptBillsRecords">රිසිට්පත්, බිල්පත් සහ වාර්තා</string>
+    <string name="automaticallyPrint">ස්වයංක්‍රීයව ලදුපත මුද්‍රණය</string>
+    <string name="setDeviceName">උපාංගයේ නම සකසන්න</string>
+    <string name="languageSelect">භාෂාව තෝරන්න</string>
+    <string name="signOut">ඉවත්වන්න</string>
+    <string name="approved">අනුමතයි</string>
+    <string name="clearSignature">අත්සන  මකන්න</string>
+    <string name="signHere"> අත්සන් කරන්න</string>
+    <string name="splitPayment">බෙදා ගෙවීම්</string>
+    <string name="cardBut">\nකාඩ්</string>
+    <string name="cashBut">\nමුදල්</string>
+    <string name="remainingAmount">ඉතුරු මුදල</string>
+    <string name="splitAmount">බෙදූ  මුදල </string>
+    <string name="split0">බෙදූ  මුදල Rs 0.00</string>
+    <string name="cashPayment">මුදලින් ගෙවීම්</string>
+    <string name="cardPayment">කාඩ් ගෙවීම්</string>
+    <string name="tenderHint">ලබාදෙන මුදල Rs 0.00</string>
+    <string name="card">කාඩ්</string>
+    <string name="waitingForSwap">Waiting for swipe / Insert card / Debit card</string>
+    <string name="issueRefund">ආපසු ගෙවීම්</string>
+    <string name="addnewPricepoint">නව මිල විචල්‍යය එකතු කරන්න  </string>
+    <string name="variantName">මිල විචල්‍යය නම</string>
+    <string name="leavePrice">අලෙවිය සිදුවන අවස්තවේදි මිල ඇතුලත් කිරිම සඳහා, දැනට මිල ක්ෂේත්රය හිස්ව තබන්න </string>
+    <string name="sureDeleteCat"> මෙම ප්‍රභේදය පද්ධතියෙන් ඉවත් කල යුතු බව ඔබට විශ්වාසද?</string>
+    <string name="catDeleteSuccess">ප්‍රභේදය සාර්ථකව ඉවත් කරන ලදි </string>
+    <string name="sureDeleteItem">මෙම අයිතමය පද්ධතියෙන් ඉවත් කල යුතු බව ඔබට විශ්වාසද?</string>
+    <string name="sureDeleteItemImage">මෙම අයිතම පින්තූරය පද්ධතියෙන් ඉවත් කල යුතු බව ඔබට විශ්වාසද?</string>
+    <string name="sureDeleteVariant">මෙම මිල විචල්‍යය  පද්ධතියෙන් ඉවත් කල යුතු බව ඔබට විශ්වාසද?</string>
+    <string name="yes">ඔව්</string>
+    <string name="no">නැත</string>
+    <string name="noImageToDelete">ඉවත් කීරිම සඳහා පින්තූරයක්  නොමැත</string>
+    <string name="sureDeleteDis">මෙම වට්ටම  පද්ධතියෙන් ඉවත් කල යුතු බව ඔබට විශ්වාසද</string>
+    <string name="wishToCont">අවවාදයයි :- මෙම ප්‍රභේදයට දැනටමත්  අයිතම අඩංගු කර ඇත. මෙම  ප්‍රභේදය ඉවත් කිරීම මගින් එම අයිතම මෙම  ප්‍රභේදයෙන්  ඉවත් වෙයි. ඉදිරියට යන්නද?</string>
+    <string name="editItem">අයිතම සංස්කරණය</string>
+    <string name="itemDeletedSuccess">අයිතමය සාර්ථකව ඉවත් කරන ලදි</string>
+    <string name="addDeletePhoto">පින්තූරය ඇතුලත් කරන්න/ඉවත් කරන්න</string>
+    <string name="editPricePoint">මිල විචල්‍යය සංස්කරණය කරන්න</string>
+    <string name="editCat">ප්‍රභේද සංස්කරණය </string>
+    <string name="editDis">වට්ටම් සංස්කරණය </string>
+    <string name="enterDiscount">කරුණාකර වට්ටම් අගය ඇතුලත් කරන්න</string>
+    <string name="takePhoto">පින්තූරය ගන්න</string>
+    <string name="choosePhoto">පින්තූරය තෝරන්න</string>
+    <string name="deletePhoto">පින්තූරය ඉවත් කරන්න</string>
+    <string name="noMatchesFoundReceipt">ඔබ සෙවු ලදුපත සඳහා, සෙවුම් ප්‍රතිඵලයක් නොමැත.</string>
+    <string name="noMatchesFoundCat">ඔබ සෙවු ප්‍රභේදය සඳහා, සෙවුම් ප්‍රතිඵලයක් නොමැත</string>
+    <string name="noMatchesFoundDis">ඔබ සෙවු වට්ටම සඳහා, සෙවුම් ප්‍රතිඵලයක් නොමැත</string>
+    <string name="noMatchesFoundItem">ඔබ සෙවු අයිතමය සඳහා, සෙවුම් ප්‍රතිඵලයක් නොමැත.</string>
+    <string name="closeBill">බිල්පත නිමකිරිම</string>
+    <string name="cont">ඉදිරියට යන්න</string>
+    <string name="splitAmountEmpty">බෙදූ මුදල ශුන්‍ය විය නොහැක</string>
+    <string name="tenderEmpty">ලබා දෙන මුදල ශුන්‍ය විය නොහැක</string>
+    <string name="lessTender">ලබා දෙන මුදල, බෙදූ මුදලට වඩා අඩු විය නොහැක</string>
+    <string name="higherSplit">බෙදූ මුදල මුදල, මුලු මුදලට වඩා   වැඩි විය නොහැක</string>
+    <string name="exceededSplit">බෙදූ මුදල, ගෙවීම සඳහා ඉතුරුවී ඇති මුදලට වඩා වැඩි විය නොහැක</string>
+    <string name="remain"> ඉතිරිව ඇත</string>
+    <string name="done">හරි</string>
+    <string name="tenderButton">ටෙන්ඩර්</string>
+    <string name="category">ප්‍රභේදය</string>
+    <string name="businessname">ව්‍යාපාරික නම</string>
+    <string name="businessAddress">ව්‍යාපාරික ලිපිනය</string>
+    <string name="businessAddress1">ව්‍යාපාරික ලිපිනය 2</string>
+    <string name="businessAddressCity">නගරය</string>
+    <string name="mobileNumber">ජංගම දුරකථන අංකය</string>
+    <string name="signUp">ලියාපදිංචි වන්න</string>
+    <string name="addVariant">මිල විචල්‍යය සුරකින්න</string>
+    <string name="viewAll">අයිතම සියල්ල </string>
+    <string name="viewAll1">නරඹන්න </string>
+    <string name="refund">ආපසු ගෙවීම් </string>
+    <string name="variable">විචල්‍යය </string>
+
+    <string name="inValidLogin">කරුණාකර නිවැරදි ඊමේල් ලිපිනය සහ මුරපදය ඇතුලත් කරන්න</string>
+    <string name="alreadyExistUser">පරිශිලකයා දැනටමත් පද්ධතිය තුල ඇත. කරුණාකර වෙනත් ඊමේල් ලිපිනයක් භාවිතා කරන්න </string>
+    <string name="sentSmsSuccess">Message sent successfully</string>
+    <string name="signUpSuccess">ඔබගේ ගිණුම සාර්ථකව නිර්මාණය කරන ලදි!. ඉදිරියට යාම සඳහා ගිණුමට පිවිසෙන්න.</string>
+    <string name="invalidPasswordLength">මුරපදය සඳහා අවම වශයෙන් අක්ෂර 8 ක් අඩංගු විය යුතුය</string>
+    <string name="passwordValidation">මුරපදය සඳහා අක්ෂර සහ ඉලක්කම් ඇතුලත් විය යුතුය</string>
+    <string name="invalidMobileNumber">ජංගම දුරකථන අංකය අංක 10ක් විය යුතුය</string>
+    <string name="storeDataEmpty">Store Data is Empty. Please Login again</string>
+    <string name="serverError">Error in server</string>
+    <string name="cityMissing">කරුණාකර ඔබගේ නගරය තෝරන්න</string>
+    <string name="splitZero">Split Amount Cannot be 0.00</string>
+    <string name="tenderZero">Tender Amount Cannot be 0.00</string>
+    <string name="invalidPrice">වැරදි මිල ඒකකයකි</string>
+    <string name="existingDiscount">වට්ටම දැනටමත් පද්ධතිය තුළ පවතී, ඔබට මෙය ප්‍රතිස්ථාපනය කිරිමට අවශයද?</string>
+    <string name="scanBarcode">Scan Barcode</string>
+    <string name="incompletePayment">අසම්පූර්ණ ගණුදෙනුවකි</string>
+    <string name="completeNow">Complete Now</string>
+    <string name="later">Later</string>
+    <string name="offlineBanner">අන්තර්ජාල සබඳතාව විසන්ධි වී ඇත</string>
+    <string name="onlineBanner">       අන්තර්ජාලය සමග සම්බන්ධ වී ඇත      </string>
+    <string name="incompleteDescription">You can also complete the transaction in transaction history</string>
+    <string name="incompleteTransactionCount">View (%1$d) more incomplete transactions</string>
+    <string name="barcodeWarning">Barcode cannot be exist in variable item</string>
+    <string name="lowStock">These items need to be re-stock!</string>
+    <string name="okBtn">OK</string>
+    <string name="zeroStock">Stock is empty. Re-stock the item before the sale.</string>
+
+
+</resources>
